@@ -2,8 +2,8 @@ $( document ).ready(function() {
   
 	// POPUP
 	function popup(){
-		var closeBtn = $('.close_btn');
-		var showPopupBtn = $('.show_popup');
+		var closeBtn = $('.close_btn'),
+				showPopupBtn = $('.show_popup');
 
 		// find&show
 		showPopupBtn.on('click', function(){
