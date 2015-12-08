@@ -4,14 +4,31 @@
 	<meta charset="UTF-8">
 	<title>Vide Vita</title>
 	<link rel="stylesheet" href="css/application.css">
+	<script src="javascript/jquery-1.11.3.min.js"></script>
+	<script src="javascript/main.js"></script>
 </head>
 <body>
+
+<div class="overflow" id="top_popup">
+	<div class="popup animated fadeInUp">
+		<div class="close_btn">close</div>
+		<iframe width="620" height="515" src="https://www.youtube.com/embed/m9vE_KxJKB8" frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>
+<div class="overflow" id="top_popup1">
+	<div class="popup animated fadeInUp">
+		<div class="close_btn">close</div>
+		<iframe width="620" height="515" src="https://www.youtube.com/embed/Utg8xJfvDkA" frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>
 
 <!--START-->
 <section class="start">
 	<!--header-->
 	<header id="header">
 		<a href="javascript:;" class="logo">logo</a>
+		<a href="javascript:;" class="show_popup" data-target="top_popup">popup</a>
+		<a href="javascript:;" class="show_popup" data-target="top_popup1">popup1</a>
 	</header>
 	<!--newsletter_subscribe-->
 	<div class="newsletter_subscribe">
