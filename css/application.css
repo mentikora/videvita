@@ -206,12 +206,17 @@ section.start{
 			outline: none;
 			width: 340px;	
 			margin-left: 65px;
-			/*margin-top: 5px;*/
 
 			font-size: 16px;
 			color: #404041;
 			line-height: 28px;
 		}
+
+		::-webkit-input-placeholder {color:#404041;}
+		::-moz-placeholder          {color:#404041;}
+		:-moz-placeholder           {color:#404041;}
+		:-ms-input-placeholder      {color:#404041;}
+
 		.newsletter_subscribe .btn_sub{
 			border: none;
 			outline: none;
@@ -282,8 +287,53 @@ section.start{
 
 /* manual */
 section.manual{
-	padding-top: 51px;
+	padding-top: 170px;
+	padding-bottom: 45px;
 }
+	section.manual > .container{
+		background: url('images/manual_bg.png') no-repeat 264px 230px;
+	}
+	section.manual h2{
+		margin-bottom: 20px;
+
+		font-family: 'Oswald', sans-serif;
+		text-transform: uppercase;
+		font-size: 32px;
+		color: #3f3f40;
+		font-weight: 400;
+	}
+	section.manual p{
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+		color: #3f3f40;
+	}
+	section.manual .block{
+		position: relative;
+	}
+	section.manual .block > div{
+		float: left;
+	}
+		.manual_first,
+		.manual_second{
+			text-align: right;
+		}
+		.manual_first .manual_content{
+			margin-top: 128px;
+		}
+		.manual_second{
+			margin-top: -70px;
+		}
+			.manual_second .manual_content{
+				margin-top: 150px;
+			}
+		.manual_third{
+			margin-top: 45px;
+		}
+			.manual_third .manual_content{
+				margin-top: 117px;
+				margin-left: 25px;
+			}
 
 /* footer */
 #footer{
