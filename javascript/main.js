@@ -17,6 +17,22 @@ $( document ).ready(function() {
 		});
 	}
 
+	// START CONTENT&BG CHANGE
+	window._timers = {
+	  changeBackground : null
+	};
+
+	var bg = 0;
+	var backgroundsArray = Array('youth', 'family', 'travel');
+
+	function multiBackground(){
+    bg = (bg+1) % backgroundsArray.length ;
+    $('section.start').attr('id', backgroundsArray[bg]);
+    clearTimeout(window._timers.changeBackground);
+    window._timers.changeBackground = setTimeout(multiBackground, 6000);
+	}
+
+	multiBackground()
 	popup()
 
 });

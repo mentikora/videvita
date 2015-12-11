@@ -231,11 +231,26 @@ section.start{
 	position: relative;
 
 	padding-top: 37px;
-
-	background: url('images/top_bg.jpg') no-repeat 50% top;
-	-webkit-background-size: cover;
-	background-size: cover;
+	-webkit-transition: background .3s ease;
+	-o-transition: background .3s ease;
+	transition: background .3s ease;
 }
+	section.start#youth{
+		background: url('images/top_bg.jpg') no-repeat 50% top;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	section.start#family{
+		background: url('images/top_family.jpg') no-repeat 50% top;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	section.start#travel{
+		background: url('images/top_travel.jpg') no-repeat 50% top;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+
 	section.start .newsletter_subscribe{
 		position: absolute;
 		bottom: 0;
