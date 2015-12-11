@@ -466,15 +466,9 @@ section.evolution{
 		#footer .socials a{
 			display: inline-block;
 			margin: 0 15px;
-			width: 22px;
-			height: 22px;
-			height: 22px;
-			line-height: 22px;
+			width: 23px;
+			height: 23px;
 			text-decoration: none;
-
-			color: #942780;
-			border-radius: 50%;
-			background: #fec530;
 
 			-webkit-transition: all .3s ease-in-out;
 			-moz-transition: all .3s ease-in-out;
@@ -483,9 +477,24 @@ section.evolution{
 			transition: all .3s ease-in-out;
 		}
 			#footer .socials a:hover{
-				box-shadow: 0 0 0 2px #fec530;
-				color: #fec530;
-				background: #942780;
+		   	-webkit-transform: scale(0.9);
+				-moz-transform: scale(0.9);
+				transform: scale(0.9);
+			}
+			#footer .socials a.soc_1{
+				background: url('images/soc_1.png') no-repeat 50%;
+			}
+			#footer .socials a.soc_2{
+				background: url('images/soc_2.png') no-repeat 50%;
+			}
+			#footer .socials a.soc_3{
+				background: url('images/soc_3.png') no-repeat 50%;
+			}
+			#footer .socials a.soc_4{
+				background: url('images/soc_4.png') no-repeat 50%;
+			}
+			#footer .socials a.soc_5{
+				background: url('images/soc_5.png') no-repeat 50%;
 			}
 	#footer .bottom{
 		height: 35px;
