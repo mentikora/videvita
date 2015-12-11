@@ -57,7 +57,7 @@ $( document ).ready(function() {
     }
 
     // START CONTENT&BG CHANGE
-    window._timers = {
+    /*window._timers = {
       changeBackground : null
     };
 
@@ -71,7 +71,7 @@ $( document ).ready(function() {
       window._timers.changeBackground = setTimeout(multiBackground, 6000);
     }
 
-    multiBackground()
+    multiBackground()*/
     popup()
 
 });
