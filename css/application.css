@@ -240,16 +240,60 @@ section.start{
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
+		section.start .youth{
+			display: none;
+		}
+		section.start#youth .youth{
+			display: block;
+		}
 	section.start#family{
 		background: url('images/top_family.jpg') no-repeat 50% top;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
+		section.start .family{
+			display: none;
+		}
+		section.start#family .family{
+			display: block;
+		}
+			section.start .family h1,
+			section.start .travel h1{
+				margin-top: 113px !important;
+			}
+			section.start .family h1:before{
+				content: '';
+				width: 231px;
+				height: 164px;
+				top: -88px;
+				left: 201px;
+				position: absolute;
+				display: block;
+
+				background: url('images/family_pair.png') no-repeat 0 0;
+			}
 	section.start#travel{
 		background: url('images/top_travel.jpg') no-repeat 50% top;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
+		section.start .travel{
+			display: none;
+		}
+		section.start#travel .travel{
+			display: block;
+		}
+		section.start .travel h1:before{
+			content: '';
+			width: 212px;
+			height: 223px;
+			top: -101px;
+			left: 208px;
+			position: absolute;
+			display: block;
+
+			background: url('images/travel_pair.png') no-repeat 0 0;
+		}
 
 	section.start .newsletter_subscribe{
 		position: absolute;
@@ -325,6 +369,7 @@ section.start{
 		section.start .left_cont h1{
 			margin-bottom: 20px;
 			margin-top: -25px;
+			position: relative;
 
 			font-family: 'Oswald', sans-serif;
 			font-size: 75px;
