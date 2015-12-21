@@ -256,6 +256,9 @@ section.start{
 		section.start#youth .youth{
 			display: block;
 		}
+		section.start#youth h1{
+			margin-top: -10px;
+		}
 		section.start#youth h1 span{
 			display: inline-block;
 			margin-bottom: 25px;
@@ -316,11 +319,25 @@ section.start{
 
 			background: url('images/travel_pair.png') no-repeat 0 0;
 		}
-
+	
 	section.start .newsletter_subscribe{
 		position: absolute;
 		bottom: 0;
 		left: 0;
+	}
+		section.start .newsletter_subscribe:before{
+			content: '';
+			position: absolute;
+			bottom: -57px;
+			left: 373px;
+			width: 25px;
+			height: 57px;
+
+			background: url('images/top_before.png') no-repeat 50%;
+			z-index: 2;
+		}
+	section.start .newsletter_subscribe,
+	section.footer_sendmail .newsletter_subscribe{
 		width: 100%;
 		padding: 33px 52px 28px 42px;
 
@@ -410,7 +427,7 @@ section.start{
 		}
 	section.start .about .right_cont{
 		padding-left: 34px;
-		width: 285px;
+		width: 287px;
 		border-left: 2px solid #fec530;
 
 		color: #fff;
@@ -448,6 +465,10 @@ section.manual{
 			width: 34px;
 			height: 1px;
 			background: #ec0681;
+		}
+		section.manual h2.skull:after{
+			right: inherit;
+			left: 0;
 		}
 	section.manual p{
 		font-size: 16px;
@@ -506,9 +527,10 @@ section.video{
 	section.video h2{
 		text-align: center;
 		text-transform: uppercase;
-		font-size: 40px;
+		font-size: 32px;
 		font-family: 'Oswald', sans-serif;
 		font-weight: 700;
+		color: #fec530;
 
 		margin: 45px 0;
 	}
@@ -525,13 +547,35 @@ section.video{
 section.evolution{
 	height: 492px;
 
+	padding-top: 95px;
+
 	background: url('images/evolution_bg.jpg') no-repeat 50%;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
+	section.evolution .evolution_logo{
+		display: block;
+		width: 215px;
+		margin-bottom: 35px;
+	}
+	section.evolution h2{
+		text-transform: uppercase;
+		font-size: 75px;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700;
+		color: #fff;
+	}
 	section.evolution .evo_img{
 		display: block;
-		margin: 65px auto 105px;
+		margin-top: 18px;
+		margin-left: 55px;
+	}
+	section.evolution .left_cont{
+	}
+	section.evolution .right_cont{
+		height: 160px;
+		margin-top: 80px;
+		border-left: 2px solid #fec530;
 	}
 
 /* footer */
@@ -539,18 +583,6 @@ section.evolution{
 	background-color: #942780;
 	position: relative;
 }
-	#footer:before{
-		content: '';
-		position: absolute;
-		top: -57px;
-		left: 50%;
-		margin-left: -12px;
-		width: 25px;
-		height: 57px;
-
-		background: url('images/footer_before.png') no-repeat 50%;
-		z-index: 2;
-	}
 	#footer .socials{
 		text-align: center;
 		padding-top: 60px;
