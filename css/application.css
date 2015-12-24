@@ -310,10 +310,10 @@ section.start{
 		}
 		section.start .travel h1:before{
 			content: '';
-			width: 212px;
-			height: 223px;
-			top: -93px;
-			left: 208px;
+			width: 470px;
+			height: 235px;
+			top: -95px;
+			left: 138px;
 			position: absolute;
 			display: block;
 
@@ -343,6 +343,9 @@ section.start{
 
 		background: #fec530;
 	}
+		section.footer_sendmail .input_sub{
+			width: 435px;
+		}
 		.newsletter_subscribe h2{
 			font-size: 30px;
 			color: #404041;
@@ -357,7 +360,8 @@ section.start{
 			outline: none;
 			width: 340px;	
 			margin-left: 65px;
-
+			height: 28px;
+			
 			font-size: 16px;
 			color: #404041;
 			line-height: 28px;
@@ -546,13 +550,25 @@ section.video{
 /* evolution */
 section.evolution{
 	height: 492px;
-
 	padding-top: 95px;
-
-	background: url('images/evolution_bg.jpg') no-repeat 50%;
-	-webkit-background-size: cover;
-	background-size: cover;
 }
+	/* bg's */
+	section.evolution.youth{
+		background: url('images/evolution_bg.jpg') no-repeat 50%;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	section.evolution.family{
+		background: url('images/evolution_bg_family.jpg') no-repeat 50%;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	section.evolution.travel{
+		background: url('images/evolution_bg_travel.jpg') no-repeat 50%;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	/**/
 	section.evolution .evolution_logo{
 		display: block;
 		width: 215px;
