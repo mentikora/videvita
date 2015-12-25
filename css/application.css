@@ -266,7 +266,7 @@ section.start{
 			margin-bottom: 25px;
 		}
 	section.start#family{
-		background: url('images/top_family.jpg') no-repeat 50%;
+		background: url('images/top_family.jpg') no-repeat 50% 40% fixed;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
