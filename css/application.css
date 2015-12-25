@@ -228,6 +228,8 @@ footer{
 #header{
 	width: 1000px;
 	margin: 0 auto;
+	position: relative;
+	z-index: 3;
 }
 	#header .logo{
 		display: block;
@@ -246,7 +248,7 @@ section.start{
 	transition: background .3s ease;
 }
 	section.start#youth{
-		background: url('images/top_bg.jpg') no-repeat 50% top;
+		background: url('images/top_youth.jpg') no-repeat 50%;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
@@ -264,7 +266,7 @@ section.start{
 			margin-bottom: 25px;
 		}
 	section.start#family{
-		background: url('images/top_family.jpg') no-repeat 50% top;
+		background: url('images/top_family.jpg') no-repeat 50%;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
@@ -294,7 +296,7 @@ section.start{
 				margin-top: 10px;
 			}
 	section.start#travel{
-		background: url('images/top_travel.jpg') no-repeat 50% top;
+		background: url('images/top_travel.jpg') no-repeat 50%;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
@@ -396,6 +398,17 @@ section.start{
 				color: #942780;
 				box-shadow: 0 0 0 2px #942780;
 			}
+	
+	section.start:before{
+		content: '';
+		height: 594px;
+		width: 100%;
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0, .3);
+	}
 
 	section.start .about{
 		position: relative;
@@ -403,6 +416,7 @@ section.start{
 		height: 500px;
 		left: 0;
 		padding: 40px 45px;
+		z-index: 3;
 
 		background: rgba(0,0,0, .4);
 	}
@@ -551,7 +565,22 @@ section.video{
 section.evolution{
 	height: 492px;
 	padding-top: 95px;
+	position: relative;
 }
+	section.evolution:before{
+		content: '';
+		height: 492px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		background: rgba(0,0,0, .7);
+	}
+	section.evolution .container{
+		position: relative;
+		z-index: 3;
+	}
 	/* bg's */
 	section.evolution.youth{
 		background: url('images/evolution_bg.jpg') no-repeat 50%;
