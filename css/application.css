@@ -248,7 +248,7 @@ section.start{
 	transition: background .3s ease;
 }
 	section.start#youth{
-		background: url('images/top_youth.jpg') no-repeat 50%;
+		background: url('images/top_youth.jpg') no-repeat 50% top;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
@@ -296,7 +296,7 @@ section.start{
 				margin-top: 10px;
 			}
 	section.start#travel{
-		background: url('images/top_travel.jpg') no-repeat 50%;
+		background: url('images/top_travel.jpg') no-repeat 50% top;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
