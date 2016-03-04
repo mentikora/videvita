@@ -51,11 +51,14 @@ b{
 }
 
 /* def's*/
-html, body{
-	height: 100%;
+body{
 	font-family: 'Open Sans', sans-serif;
 	background-color: #f8f8f8;
 	min-width: 100px;
+	height: 100%;
+}
+body#body_travel{
+	background-color: #eaeaea;
 }
 
 body > section,
@@ -680,3 +683,51 @@ section.evolution{
 		#footer .bottom .happy{
 			text-decoration: none;
 		}
+
+/* 04.03.2016 */
+
+/* ==beware of monkeyCoding!== */
+/* ==== TRAVEl PAGE STYLE ==== */
+#body_travel section.start .newsletter_subscribe:before{
+	display: none;
+}
+#body_travel section.manual{
+	padding-bottom: 0;
+	padding-top: 130px;
+}
+#body_travel section.manual > .container{
+	background: url('images/manual_bg_travel.png') no-repeat 115px 300px;
+}
+
+#body_travel .manual_first{
+	text-align: left;
+}
+	#body_travel .manual_first .manual_content{
+		margin-left: -145px;
+	}
+#body_travel .manual_second{
+	right: -100px;
+	top: -30px;
+}
+	#body_travel .manual_second .manual_content{
+		margin-top: 250px;
+		margin-right: -70px;
+	}
+#body_travel .manual_third{
+	margin-top: -100px;
+	left: -85px;
+}
+	#body_travel .manual_third .manual_content{
+		margin-left: -35px;
+		margin-top: 220px;
+	}
+
+#body_travel section.manual h2{
+	font-weight: 900;
+}
+	#body_travel section.manual h2:after{
+		height: 2px;
+	}
+#body_travel section.manual p{
+	color: #89898b;
+}
