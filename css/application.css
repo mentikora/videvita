@@ -583,7 +583,7 @@ section.evolution{
 	}
 	/* bg's */
 	section.evolution.youth{
-		background: url('images/evolution_bg.jpg') no-repeat 50%;
+		background: url('images/evolution_bg_youth.jpg') no-repeat 50%;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
